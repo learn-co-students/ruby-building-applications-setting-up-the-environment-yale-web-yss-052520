@@ -1,7 +1,14 @@
 #!/usr/bin/env ruby 
+# ^can be ignored, generally known as "shebang"
+    # usd to indicate what interpreter should be used to read the code in this file
+    # optional line that makes code more functional
 
-require_relative '../lib/garden.rb'
-require_relative '../lib/plant.rb'
+# require_relative '../lib/garden.rb'
+# require_relative '../lib/plant.rb'
+# ^moving these to environment.rb for DRYer, more flexible code
+
+require_relative '../config/environment.rb'
+# need to require where we put all the require files
 
 lawn = Garden.new(name: 'Front Lawn')
 
